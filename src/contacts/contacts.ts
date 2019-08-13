@@ -10,3 +10,13 @@ index.addObjects(contactsJSON, (err, content) => {
   }
   console.info('imported!');
 });
+
+index.setSettings(
+  {
+    customRanking: ['desc(followers)'],
+    searchableAttributes: ['lastname', 'firstname', 'company', 'email', 'city', 'address']
+  },
+  (err, content) => {
+    console.log(content);
+  }
+);
