@@ -4,21 +4,21 @@ const client = algoliasearch(process.env.ALGOLIA_APPLICATION_ID, process.env.ALG
 const index = client.initIndex('contacts');
 
 // Search for a first name
-index.search('jimmie', (err, res) => {
+index.search('jimmie', (_, res) => {
   console.log(res.hits);
 });
 
 // Search for a first name with typo
-index.search('jimie', (err, res) => {
+index.search('jimie', (_, res) => {
   console.log(res.hits);
 });
 
 // Search for a company
-index.search('california paint', (err, res) => {
+index.search('california paint', (_, res) => {
   console.log(res.hits);
 });
 
 // Search for a first name and a company
-index.search('jimmie paint', (err, res) => {
+index.search('jimmie paint', (_, res) => {
   console.log(res.hits);
 });

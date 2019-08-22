@@ -4,7 +4,7 @@ const client = algoliasearch(process.env.ALGOLIA_APPLICATION_ID, process.env.ALG
 const index = client.initIndex('contacts');
 const contactsJSON = require('./contacts.json');
 
-index.addObjects(contactsJSON, (err, content) => {
+index.addObjects(contactsJSON, (err, _) => {
   if (err) {
     console.error(err);
   }
@@ -16,7 +16,7 @@ index.setSettings(
     customRanking: ['desc(followers)'],
     searchableAttributes: ['lastname', 'firstname', 'company', 'email', 'city', 'address']
   },
-  (err, content) => {
+  (_, content) => {
     console.log(content);
   }
 );
