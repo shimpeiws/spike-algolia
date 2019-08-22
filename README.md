@@ -1,10 +1,10 @@
 ## Spike in server-side using ts-node
 
 Create index and import contact data
-`npx ts-node src/contacts/contacts`
+`npx ts-node server/contacts/contacts.ts`
 
 Search
-`npx ts-node src/contacts/search.ts`
+`npx ts-node server/contacts/search.ts`
 
 ## Spike instasearch.js
 
