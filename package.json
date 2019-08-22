@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "server:index": "npx ts-node --project ./server/tsconfig.json ./server/contacts/contacts.ts",
+    "server:search": "npx ts-node --project ./server/tsconfig.json ./server/contacts/search.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

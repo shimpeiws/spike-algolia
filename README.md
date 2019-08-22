@@ -1,16 +1,17 @@
 ## Spike in server-side using ts-node
 
 Create index and import contact data
-`npx ts-node server/contacts/contacts.ts`
+`yarn server:index`
 
 Search
-`npx ts-node server/contacts/search.ts`
+`yarn server:search`
 
 ## Spike instasearch.js
 
 Launch `./public` directory with some web server
 
-ex: `ruby -run -e httpd ./public -p 8000`
+Using webrick
+`ruby -run -e httpd ./public -p 8000`
 
 ## Spike React InstantSearch
 
