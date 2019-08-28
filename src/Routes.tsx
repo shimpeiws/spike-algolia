@@ -3,7 +3,7 @@ import { Switch } from 'react-router';
 import { Link, Route } from 'react-router-dom';
 import NotFound from './NotFound';
 import { Home } from './components/Home';
-import { Search } from './components/InstantSearch';
+import { ContactSearch } from './components/ContactSearch';
 import { IkeaSearch } from './components/IkeaSearch';
 
 export class Routes extends React.Component<{}, {}> {
@@ -26,7 +26,7 @@ export class Routes extends React.Component<{}, {}> {
           <Route
             exact
             path="/contacts"
-            render={props => <Search indexName="contacts" {...props} />}
+            render={props => <ContactSearch indexName="contacts" {...props} />}
           />
           <Route component={NotFound} />
         </Switch>
