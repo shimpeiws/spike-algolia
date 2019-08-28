@@ -3,7 +3,7 @@ import * as React from "react";
 type Props = {};
 
 export const Home: React.FC<Props> = (props: Props) => (
-  <div>
+  <div className="ais-InstantSearch">
     <h2>Home</h2>
     <p>Hello✌️✌️✌️</p>
     <div>

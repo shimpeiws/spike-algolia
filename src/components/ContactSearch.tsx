@@ -20,7 +20,7 @@ type Props = {
 };
 
 export const ContactSearch: React.FC<Props> = (props: Props) => (
-  <div>
+  <div className="ais-InstantSearch">
     <h2>Hello React InstantSearch</h2>
     <InstantSearch searchClient={searchClient} indexName={props.indexName}>
       <div>
