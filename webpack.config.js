@@ -1,6 +1,7 @@
 const path = require('path');
 
 module.exports = {
+  mode: 'development',
   entry: './src/Index.tsx',
   output: {
     filename: './js/bundle.js'
