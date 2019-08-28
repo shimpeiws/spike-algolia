@@ -18,7 +18,7 @@ type Props = {
 
 export const Search: React.FC<Props> = (props: Props) => (
   <div>
-    <h1>Hello React InstantSearch</h1>
+    <h2>Hello React InstantSearch</h2>
     <InstantSearch searchClient={searchClient} indexName={props.indexName}>
       <div>
         <ClearRefinements />
