@@ -1,5 +1,5 @@
-import * as React from 'react';
-import algoliasearch from 'algoliasearch/lite';
+import * as React from "react";
+import algoliasearch from "algoliasearch/lite";
 import {
   InstantSearch,
   SearchBox,
@@ -8,17 +8,20 @@ import {
   RefinementList,
   Configure,
   Pagination
-} from 'react-instantsearch-dom';
+} from "react-instantsearch-dom";
 
-const searchClient = algoliasearch('TAVBSTANSR', 'a1fe76ffe66ec4f702a2ae77c4c3a54c');
+const searchClient = algoliasearch(
+  "TAVBSTANSR",
+  "a1fe76ffe66ec4f702a2ae77c4c3a54c"
+);
 
 type Props = {
   indexName: string;
 };
 
-export const Search: React.FC<Props> = (props: Props) => (
+export const ContactSearch: React.FC<Props> = (props: Props) => (
   <div>
-    <h1>Hello React InstantSearch</h1>
+    <h2>Hello React InstantSearch</h2>
     <InstantSearch searchClient={searchClient} indexName={props.indexName}>
       <div>
         <ClearRefinements />

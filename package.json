@@ -7,7 +7,8 @@
     "start": "webpack-dev-server --config ./webpack.config.js",
     "server:index": "npx ts-node --project ./server/tsconfig.json ./server/contacts/contacts.ts",
     "server:search": "npx ts-node --project ./server/tsconfig.json ./server/contacts/search.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "npx eslint src/*/*.tsx"
   },
   "author": "",
   "license": "ISC",
@@ -16,6 +17,8 @@
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-instantsearch-dom": "^5.7.0",
+    "react-router": "^5.0.1",
+    "react-router-dom": "^5.0.1",
     "ts-node": "^8.3.0"
   },
   "devDependencies": {
@@ -24,6 +27,14 @@
     "@types/react": "^16.9.2",
     "@types/react-dom": "^16.9.0",
     "@types/react-instantsearch-dom": "^5.2.5",
+    "@types/react-router-dom": "^4.3.5",
+    "@typescript-eslint/eslint-plugin": "^1.9.0",
+    "@typescript-eslint/parser": "^1.9.0",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.14.3",
+    "prettier": "^1.18.2",
     "ts-loader": "^6.0.4",
     "typescript": "^3.5.3",
     "webpack": "^4.39.2",
