@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --config ./webpack.config.js",
+    "build": "webpack --config ./webpack.config.prod.js",
     "server:index": "npx ts-node --project ./server/tsconfig.json ./server/contacts/contacts.ts",
     "server:search": "npx ts-node --project ./server/tsconfig.json ./server/contacts/search.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -37,8 +38,10 @@
     "prettier": "^1.18.2",
     "ts-loader": "^6.0.4",
     "typescript": "^3.5.3",
+    "uglifyjs-webpack-plugin": "^2.2.0",
     "webpack": "^4.39.2",
     "webpack-cli": "^3.3.7",
-    "webpack-dev-server": "^3.8.0"
+    "webpack-dev-server": "^3.8.0",
+    "webpack-utf8-bom": "^1.1.3"
   }
 }
