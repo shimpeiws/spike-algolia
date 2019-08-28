@@ -22,7 +22,7 @@ export class Routes extends React.Component<{}, {}> {
         </li>
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/ikea-products" component={IkeaSearch} />
+          <Route exact path="/ikea-products" render={props => <IkeaSearch indexName="ikea-products" {...props} />} />
           <Route
             exact
             path="/contacts"
