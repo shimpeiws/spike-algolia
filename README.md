@@ -1,3 +1,5 @@
+Trying [Algolia](https://www.algolia.com/)
+
 ## Spike in server-side using ts-node
 
 Create index and import contact data
@@ -58,4 +60,4 @@ Using webrick
 Launch webpack dev-server
 `yarn start`
 
-[![Image from Gyazo](https://i.gyazo.com/3dc903a242d2e6084ace4921a980975b.gif)](https://gyazo.com/3dc903a242d2e6084ace4921a980975b)
+[![Image from Gyazo](https://i.gyazo.com/14bda224823fd495d6461d315259308b.gif)](https://gyazo.com/14bda224823fd495d6461d315259308b)
